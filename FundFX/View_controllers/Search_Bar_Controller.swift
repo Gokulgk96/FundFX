@@ -22,8 +22,6 @@ class Search_Bar_Controller: UIViewController {
 
         
     }
-    
-
 
 }
 

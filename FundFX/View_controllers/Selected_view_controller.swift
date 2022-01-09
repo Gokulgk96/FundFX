@@ -85,13 +85,13 @@ class Selected_view_controller: UIViewController {
             bio_url_link = apicaller.technicalAnalysis[collection_index!]?.authors[0]?.bio
             main_index = collection_index!
             
-        case 3: display(Images: (apicaller.specialReport[collection_index!]?.headlineImageUrl), Title: (apicaller.specialReport[collection_index!]?.title)!, Description: (apicaller.specialReport[collection_index!]?.description)!, author_name: (apicaller.specialReport[collection_index!]?.authors[0]?.name)! ,author_profession: (apicaller.specialReport[collection_index!]?.authors[0]?.title)!)
+        case 3: display(Images: (apicaller.specialReport[collection_index!]?.headlineImageUrl), Title: (apicaller.specialReport[collection_index!]?.title)!, Description: (apicaller.specialReport[collection_index!]?.description)!, author_name: (apicaller.specialReport[collection_index!]?.authors[0]?.name)! ,author_profession: (apicaller.specialReport[collection_index!]?.authors[0]?.title) )
             url_link = apicaller.specialReport[collection_index!]?.url
             bio_url_link = apicaller.specialReport[collection_index!]?.authors[0]?.bio
             main_index = collection_index!
             
         case apicaller.totals.count:
-            display(Images: (apicaller.totals[total_table_view]?.headlineImageUrl), Title: (apicaller.totals[total_table_view]?.title)!, Description: (apicaller.totals[total_table_view]?.description)!, author_name: (apicaller.totals[total_table_view]?.authors[0]?.name)! ,author_profession: (apicaller.totals[total_table_view]?.authors[0]?.title)!)
+            display(Images: (apicaller.totals[total_table_view]?.headlineImageUrl), Title: (apicaller.totals[total_table_view]?.title)!, Description: (apicaller.totals[total_table_view]?.description)!, author_name: (apicaller.totals[total_table_view]?.authors[0]?.name)! ,author_profession: (apicaller.totals[total_table_view]?.authors[0]?.title))
                 url_link = apicaller.totals[total_table_view]?.url
             main_index = total_table_view
             
@@ -131,7 +131,7 @@ class Selected_view_controller: UIViewController {
     }
     
     
-    func display(Images: String?, Title: String, Description: String, author_name: String ,author_profession: String)
+    func display(Images: String?, Title: String, Description: String, author_name: String ,author_profession: String?)
     {
         Title_view_work.text = Title
         

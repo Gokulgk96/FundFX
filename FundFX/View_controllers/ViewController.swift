@@ -30,8 +30,6 @@ class ViewController: UIViewController {
             self.Table_View.reloadData()
 
             apicaller.totals = Array(Set(apicaller.totals))
-           
-            
             
         }
     }

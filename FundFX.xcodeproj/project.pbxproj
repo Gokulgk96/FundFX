@@ -113,12 +113,12 @@
 		306577F027748B3B00D329C1 /* FundFX */ = {
 			isa = PBXGroup;
 			children = (
+				306926312782322E00D15CDC /* Custom_Cell */,
+				306CA4642785D4D800F6DCBB /* View_controllers */,
+				3071F537278A0B1600735773 /* Data_Model */,
 				306577F127748B3B00D329C1 /* AppDelegate.swift */,
 				306577F327748B3B00D329C1 /* SceneDelegate.swift */,
 				306577F727748B3B00D329C1 /* Main.storyboard */,
-				3070E89027771532004C166A /* Api_structures.swift */,
-				306CA4642785D4D800F6DCBB /* View_controllers */,
-				306926312782322E00D15CDC /* Custom_Cell */,
 				306577FA27748B3C00D329C1 /* Assets.xcassets */,
 				306577FC27748B3C00D329C1 /* LaunchScreen.storyboard */,
 				3065782D2774B05200D329C1 /* App_icon.jpg */,
@@ -163,6 +163,14 @@
 				3009E6B62784CD3A00F8CB97 /* Selected_view_controller.swift */,
 			);
 			path = View_controllers;
+			sourceTree = "<group>";
+		};
+		3071F537278A0B1600735773 /* Data_Model */ = {
+			isa = PBXGroup;
+			children = (
+				3070E89027771532004C166A /* Api_structures.swift */,
+			);
+			path = Data_Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
